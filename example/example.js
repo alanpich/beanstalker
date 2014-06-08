@@ -1,4 +1,4 @@
-var BeanWorkers = require('./../index'),
+var BeanStalker = require('./../index'),
     workerFn = require('./example-worker'),
     terminal = require('node-terminal'),
     formatTime = require('./format-time');
@@ -22,7 +22,7 @@ var conf = {
 /**
  *  Connect to a Beanstalkd server and create a Worker
  */
-BeanWorkers.createWorker(conf,workerFn,function(err,worker){
+BeanStalker.createWorker(conf,workerFn,function(err,worker){
 
     /**
      * Errors here mean that something bad happenned before the
