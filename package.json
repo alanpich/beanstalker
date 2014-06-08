@@ -1,6 +1,6 @@
 {
     "name": "beanstalker",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "High-level client API wrapper for Beanstalkd distributed workers. Built on top of fivebean.",
     "main": "index.js",
     "scripts": {
