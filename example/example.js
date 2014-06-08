@@ -58,10 +58,11 @@ BeanWorkers.createWorker(conf,workerFn,function(err,worker){
         terminal.write('----------------------------').nl();
         terminal.write('> '+slug).nl();
         terminal.write('----------------------------').nl();
-        terminal.write('Status:         '+info.status).nl();
-        terminal.write('Uptime:         '+uptime).nl();
-        terminal.write('Completed jobs: '+info.completed).nl();
-        terminal.write('Average time:   '+formatTime(info.averageTime)).nl();
+        terminal.write('  Status:         '+info.status).nl();
+        terminal.write('  Uptime:         '+uptime).nl();
+        terminal.write('  Completed jobs: '+info.completed).nl();
+        terminal.write('  Average time:   '+formatTime(info.averageTime)).nl();
+        terminal.write('----------------------------').nl();
     },1000);
 
 });
